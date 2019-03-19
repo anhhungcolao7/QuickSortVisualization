@@ -32,7 +32,6 @@ public class VisualPane extends Group {
             list.add(rec);
             this.getChildren().add(rec);
         }
-
     }
 
 //    @Override
