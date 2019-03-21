@@ -11,14 +11,14 @@ package Algorithm;
  */
 public class QuickSortStatus {
     private int left, right, pivot, firstPointer, secondPointer, currentValue;
-    private int swapType;
+    private int swapType, actionType;
 
    
     public QuickSortStatus() {
         
     }
 
-    public QuickSortStatus(int left, int right, int pivot, int firstPointer, int secondPointer, int currentValue, int swapType) {
+    public QuickSortStatus(int left, int right, int pivot, int firstPointer, int secondPointer, int currentValue, int swapType, int actionType) {
         this.left = left;
         this.right = right;
         this.pivot = pivot;
@@ -26,6 +26,7 @@ public class QuickSortStatus {
         this.secondPointer = secondPointer;
         this.currentValue = currentValue;
         this.swapType = swapType;
+        this.actionType = actionType;
     }
 
     public int getCurrentValue() {

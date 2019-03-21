@@ -5,6 +5,8 @@
  */
 package Visualization;
 
+import javafx.beans.property.SimpleIntegerProperty;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,14 +30,23 @@ public class Model {
         this.barList = new ArrayList<Bar>();
         List<Integer> chartData = data.getData();
         for(int i=0;i<chartData.size();i++) {
-            this.barList.add(new Bar(i, chartData.get(i)));
+            this.barList.add(new Bar(new SimpleIntegerProperty(i), chartData.get(i)));
         }
     }
     
     public void swap(int firstIndex, int secondIndex) {
-        int tmp = this.barList.get(firstIndex).getIndex();
-        this.barList.get(firstIndex).setIndex(this.barList.get(secondIndex).getIndex());
-        this.barList.get(secondIndex).setIndex(tmp);
+//        int tmp = this.barList.get(firstIndex).getIndex().getValue();
+//        this.barList.get(firstIndex).setValue(this.barList.get(secondIndex).getIndex().getValue());
+//        this.barList.get(secondIndex).getIndex().setValue(tmp);
+        for(int i=0;i<this.barList.size();i++) {
+            int index = this.barList.get(i).getIndex().getValue();
+            if (index == firstIndex) {
+                this.barList.get(i).getIndex().setValue(secondIndex);
+            }
+            else if (index == secondIndex) {
+                this.barList.get(i).getIndex().setValue(firstIndex);
+            }
+        }
         
     }
 

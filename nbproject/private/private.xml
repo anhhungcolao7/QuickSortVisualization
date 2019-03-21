@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
@@ -5,3 +6,28 @@
         <group/>
     </open-files>
 </project-private>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/Visualization/Bar.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/Visualization/Main.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/Visualization/VisualizeTask.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/Visualization/Chart.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/extension/IExtensionFactory.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/Visualization/Model.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/extension/IExtension.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/Algorithm/QuickSortStatus.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/Algorithm/QuickSort.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/extension/MyExtensionFrame.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/Algorithm/SwapType.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/extension/VisualPane.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/Algorithm/Algorithm.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/Visualization/Data.java</file>
+            <file>file:/C:/Users/ahcl/Documents/NetBeansProjects/QuickSortVisualization/src/Visualization/ChartLayout.java</file>
+        </group>
+    </open-files>
+</project-private>
+>>>>>>> 0bf757bde41a3ec5b2f33b6c58bfaa385070e1e4
