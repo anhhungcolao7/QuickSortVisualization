@@ -7,6 +7,8 @@ package Visualization;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.Pane;
 
 /**
@@ -19,7 +21,6 @@ public class Chart {
     public Chart(Model model) {
         this.contentPane = new Pane();
         this.model = model;
-        this.contentPane.setFocusTraversable(true);
     }
     
     public void update() {
