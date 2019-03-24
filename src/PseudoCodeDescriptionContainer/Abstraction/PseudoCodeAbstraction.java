@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package model;
+package PseudoCodeDescriptionContainer.Abstraction;
 
 import java.util.Vector;
 
@@ -11,7 +11,7 @@ import java.util.Vector;
  *
  * @author mac
  */
-public class PseudoCodeModel {
+public class PseudoCodeAbstraction {
     private Vector pseudoCodeList;
 
     public void addPseudoLineCode(String lineCode) {

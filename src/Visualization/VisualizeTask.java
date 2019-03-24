@@ -7,7 +7,7 @@ package Visualization;
 
 import Algorithm.QuickSortStatus;
 import Algorithm.SwapType;
-import viewcontroller.PseudoCodeDescriptionContainer;
+import PseudoCodeDescriptionContainer.PresentationControl.PseudoCodeDescriptionContainerPresentationControl;
 
 import java.util.List;
 import java.util.logging.Level;
@@ -20,14 +20,14 @@ import java.util.logging.Logger;
 public class VisualizeTask implements Runnable{
     List<QuickSortStatus> states;
     Model model;
-    PseudoCodeDescriptionContainer pseudoCodeDescriptionContainer;
+    PseudoCodeDescriptionContainerPresentationControl pseudoCodeDescriptionContainer;
     int speed;
     public VisualizeTask() {
     }
 
 
 
-    public VisualizeTask(List<QuickSortStatus> states, Model model, PseudoCodeDescriptionContainer pseudoCodeDescriptionContainer, int speed) {
+    public VisualizeTask(List<QuickSortStatus> states, Model model, PseudoCodeDescriptionContainerPresentationControl pseudoCodeDescriptionContainer, int speed) {
         this.states = states;
         this.model = model;
         this.pseudoCodeDescriptionContainer = pseudoCodeDescriptionContainer;

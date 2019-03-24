@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
      * and open the template in the editor.
  */
-package model;
+package PseudoCodeDescriptionContainer.Abstraction;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
@@ -12,7 +12,7 @@ import javafx.beans.property.StringProperty;
  *
  * @author mac
  */
-public class CodeDescriptionModel {
+public class CodeDescriptionAbstraction {
 
     // define description object 
     private StringProperty descriptionText = new SimpleStringProperty();

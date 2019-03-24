@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package viewcontroller;
+package PseudoCodeDescriptionContainer.PresentationControl;
 
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
@@ -11,7 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import model.CodeDescriptionModel;
+import PseudoCodeDescriptionContainer.Abstraction.CodeDescriptionAbstraction;
 
 import static Constant.Constant.*;
 
@@ -19,21 +19,21 @@ import static Constant.Constant.*;
  *
  * @author mac
  */
-public class CodeDescriptionViewController extends VBox {
+public class CodeDescriptionPresentationControl extends VBox {
 
-    private CodeDescriptionModel codeDescriptionModel;
+    private CodeDescriptionAbstraction codeDescriptionModel;
     private Label descriptionText;
     private Label subtitleText;
 
-    public CodeDescriptionModel getCodeDescriptionModel() {
+    public CodeDescriptionAbstraction getCodeDescriptionModel() {
         return codeDescriptionModel;
     }
 
-    public void setCodeDescriptionModel(CodeDescriptionModel codeDescriptionModel) {
+    public void setCodeDescriptionModel(CodeDescriptionAbstraction codeDescriptionModel) {
         this.codeDescriptionModel = codeDescriptionModel;
     }
 
-    public CodeDescriptionViewController(CodeDescriptionModel codeDescriptionModel) {
+    public CodeDescriptionPresentationControl(CodeDescriptionAbstraction codeDescriptionModel) {
         this.codeDescriptionModel = codeDescriptionModel;
         init();
     }
@@ -64,7 +64,8 @@ public class CodeDescriptionViewController extends VBox {
     protected void setupLabelInContainer(Label label) {
         
         label.setTextFill(Color.valueOf(COLOR_DESCRIPTION_TEXT_PSEUDOCODE_CONTAINER));
-        label.setFont(new Font(FONT_PSEUDOCODE_CONTAINER_TEXT, SIZE_PSEUDOCODE_CONTAINER_TEXT));
+       // label.setFont(new Font(FONT_PSEUDOCODE_CONTAINER_TEXT, SIZE_PSEUDOCODE_CONTAINER_TEXT));
+//       label.setMinWidth(Region.USE_PREF_SIZE);
     }
 
 }

@@ -28,7 +28,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-import viewcontroller.PseudoCodeDescriptionContainer;
+import PseudoCodeDescriptionContainer.PresentationControl.PseudoCodeDescriptionContainerPresentationControl;
 
 /**
  *
@@ -62,7 +62,7 @@ public class Main extends Application {
         slider.setShowTickLabels(true);
         slider.setShowTickMarks(true);
         slider.setBlockIncrement(100);
-        PseudoCodeDescriptionContainer pseudoCodeDescriptionContainer = new PseudoCodeDescriptionContainer();
+        PseudoCodeDescriptionContainerPresentationControl pseudoCodeDescriptionContainer = new PseudoCodeDescriptionContainerPresentationControl();
         root.setRight(pseudoCodeDescriptionContainer);
         VisualizeTask visualizeTask = new VisualizeTask(states, model, pseudoCodeDescriptionContainer, 1000);
         new Thread(visualizeTask).start();

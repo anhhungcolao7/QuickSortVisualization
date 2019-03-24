@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package viewcontroller;
+package PseudoCodeDescriptionContainer.PresentationControl;
 
 
 import javafx.geometry.Insets;
@@ -11,7 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import model.PseudoCodeModel;
+import PseudoCodeDescriptionContainer.Abstraction.PseudoCodeAbstraction;
 
 import static Constant.Constant.*;
 
@@ -20,14 +20,14 @@ import static Constant.Constant.*;
  *
  * @author mac
  */
-public class PseudoCodeViewController extends VBox {
+public class PseudoCodePresentationControl extends VBox {
 
-    private PseudoCodeModel pseudoCodeModel;
+    private PseudoCodeAbstraction pseudoCodeModel;
     private Pane[] panes;
     private Label[] labels;
     private int prev = -1; // prev present for Id of array that this index is selected previously
 
-    public PseudoCodeViewController(PseudoCodeModel pseudoCodeModel) {
+    public PseudoCodePresentationControl(PseudoCodeAbstraction pseudoCodeModel) {
         this.pseudoCodeModel = pseudoCodeModel;
         initPaneView();
     }
@@ -52,7 +52,8 @@ public class PseudoCodeViewController extends VBox {
      protected void setupLabelInContainer(Label label) {
         
         label.setTextFill(Color.valueOf(COLOR_PSEUDOCODE_TEXT_PSEUDOCODE_CONTAINER));
-        label.setFont(new Font(FONT_PSEUDOCODE_CONTAINER_TEXT, SIZE_PSEUDOCODE_CONTAINER_TEXT));
+        //label.setFont(new Font(FONT_PSEUDOCODE_CONTAINER_TEXT, SIZE_PSEUDOCODE_CONTAINER_TEXT));
+//        label.setMinWidth(Region.USE_PREF_SIZE);
     }
     
     public void setHightlight(int newId){
