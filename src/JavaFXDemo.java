@@ -17,7 +17,7 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import PseudoCodeDescriptionContainer.PresentationControl.PseudoCodeDescriptionContainerPresentationControl;
+import PseudoCodeDescriptionContainer.ViewController.PseudoCodeDescriptionContainerViewController;
 
 import static Constant.Constant.TIME_DELAY;
 
@@ -28,7 +28,7 @@ import static Constant.Constant.TIME_DELAY;
 public class JavaFXDemo extends Application {
 
     private StackPane root;
-    private PseudoCodeDescriptionContainerPresentationControl pseudoCodeDescriptionContainer;
+    private PseudoCodeDescriptionContainerViewController pseudoCodeDescriptionContainer;
 
     @Override
     public void start(Stage primaryStage) {
@@ -43,7 +43,7 @@ public class JavaFXDemo extends Application {
     
     public void initView(){
         // contructor to container
-        pseudoCodeDescriptionContainer = new PseudoCodeDescriptionContainerPresentationControl();
+        pseudoCodeDescriptionContainer = new PseudoCodeDescriptionContainerViewController();
         
         // root(Stack Pane) handling 
         root = new StackPane();

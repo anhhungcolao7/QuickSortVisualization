@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PseudoCodeDescriptionContainer.PresentationControl;
+package PseudoCodeDescriptionContainer.ViewController;
 
 
 import javafx.geometry.Insets;
@@ -11,7 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import PseudoCodeDescriptionContainer.Abstraction.PseudoCodeAbstraction;
+import PseudoCodeDescriptionContainer.Model.PseudoCodeModel;
 
 import static Constant.Constant.*;
 
@@ -20,14 +20,14 @@ import static Constant.Constant.*;
  *
  * @author mac
  */
-public class PseudoCodePresentationControl extends VBox {
+public class PseudoCodeViewController extends VBox {
 
-    private PseudoCodeAbstraction pseudoCodeModel;
+    private PseudoCodeModel pseudoCodeModel;
     private Pane[] panes;
     private Label[] labels;
     private int prev = -1; // prev present for Id of array that this index is selected previously
 
-    public PseudoCodePresentationControl(PseudoCodeAbstraction pseudoCodeModel) {
+    public PseudoCodeViewController(PseudoCodeModel pseudoCodeModel) {
         this.pseudoCodeModel = pseudoCodeModel;
         initPaneView();
     }

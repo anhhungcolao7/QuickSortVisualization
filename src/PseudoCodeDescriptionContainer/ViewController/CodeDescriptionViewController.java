@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package PseudoCodeDescriptionContainer.PresentationControl;
+package PseudoCodeDescriptionContainer.ViewController;
 
 import javafx.collections.ObservableList;
 import javafx.geometry.Insets;
@@ -11,7 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import PseudoCodeDescriptionContainer.Abstraction.CodeDescriptionAbstraction;
+import PseudoCodeDescriptionContainer.Model.CodeDescriptionModel;
 
 import static Constant.Constant.*;
 
@@ -19,21 +19,21 @@ import static Constant.Constant.*;
  *
  * @author mac
  */
-public class CodeDescriptionPresentationControl extends VBox {
+public class CodeDescriptionViewController extends VBox {
 
-    private CodeDescriptionAbstraction codeDescriptionModel;
+    private CodeDescriptionModel codeDescriptionModel;
     private Label descriptionText;
     private Label subtitleText;
 
-    public CodeDescriptionAbstraction getCodeDescriptionModel() {
+    public CodeDescriptionModel getCodeDescriptionModel() {
         return codeDescriptionModel;
     }
 
-    public void setCodeDescriptionModel(CodeDescriptionAbstraction codeDescriptionModel) {
+    public void setCodeDescriptionModel(CodeDescriptionModel codeDescriptionModel) {
         this.codeDescriptionModel = codeDescriptionModel;
     }
 
-    public CodeDescriptionPresentationControl(CodeDescriptionAbstraction codeDescriptionModel) {
+    public CodeDescriptionViewController(CodeDescriptionModel codeDescriptionModel) {
         this.codeDescriptionModel = codeDescriptionModel;
         init();
     }
